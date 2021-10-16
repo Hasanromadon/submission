@@ -1,0 +1,33 @@
+// *:focus {
+//     box-shadow: 0 0 5px 5px $color-primary;
+// }
+
+
+.skip-link {
+    background: $color-primary;
+    color: #fff;
+    font-weight: 700;
+    left: 50%;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-100%);
+    z-index: 999;
+
+    @media only screen and (max-width: $bp-medium-2) {
+        display: none;
+    }
+}
+
+.skip-link:focus {
+    transform: translateY(0%);
+}
+
+
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
