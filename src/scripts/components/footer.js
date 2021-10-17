@@ -38,7 +38,7 @@ class Footer extends HTMLElement {
                         <p class="footer__about">Kulinary adalah sebuah website untuk mendapatkan informasi
                             restoran-restoran
                             kekinian dan terlengkap.</p>
-                        <p class="footer__about">Copyright © 2021 - Kurinary</p>
+                        <p class="footer__about">Copyright © 2021 - Kulinary</p>
                     </div>
                 </div>
             </div>
