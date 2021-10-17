@@ -11,7 +11,6 @@ class PlayersView extends View {
 
     generateMarkUp() {
       return `<div class="container">
-
                 <div class="player_container">
                     ${this.renderCardView()}
                 </div>

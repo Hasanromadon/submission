@@ -14,13 +14,6 @@ constructor(){
   
 }
 
-// renderCard () {
-//   const { data } = this;
-//   return data
-//     .map((restaurant) => restaurantCard(restaurant))
-//     .join(' ');
-// }
-
 generateMarkUp() {
   return(
       categoryCard(baliImg, 'Bali', 'first')+
