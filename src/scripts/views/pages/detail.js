@@ -3,7 +3,7 @@ import { detailRestaurant, sidebarRestaurantCard } from '../templates/template-c
 import RestaurantSource from '../../data/restaurant-source';
 import { scrollPage } from '../../utils/scroll-page';
 import submitReview from '../../utils/submit-review';
-import FavoriteButtonInitiator from '../../utils/favorite-button-initiator';
+import FavoriteButtonPresenter from '../../utils/favorite-button-presenter';
 
 const Detail = {
   async render() {
@@ -41,7 +41,7 @@ const Detail = {
       sidebarContainer.innerHTML += sidebarRestaurantCard(recommendRes);
     });
     // add util functions
-    FavoriteButtonInitiator.init({
+    FavoriteButtonPresenter.init({
       favoriteButtonContainer: document.querySelector('#likeButtonContainer'),
       restaurant: {
         id, name, description, pictureId, city, rating,
