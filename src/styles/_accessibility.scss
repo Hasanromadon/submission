@@ -1,0 +1,30 @@
+
+
+.skip-link {
+    background: $color-primary;
+    color: black;
+    font-weight: 700;
+    left: 30%;
+    padding: 1.6rem;
+    position: absolute;
+    transform: translateY(-100%);
+    z-index: 999;
+}
+
+.skip-link:focus {
+    transform: translateY(0%);
+}
+
+
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.toast-close {
+    padding: 2rem !important;
+}

@@ -1,0 +1,176 @@
+
+.app-bar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    &__container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.app-bar .app-bar__menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.app-bar .app-bar__menu button {
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 1rem 1.3rem;
+}
+
+.app-bar .app-bar__brand {
+    display: flex;
+    align-items: center;
+    & a {
+        padding: 1.3rem 0;
+        
+    }
+}
+
+
+.app-bar .app-bar__navigation {
+    position: absolute;
+    top: 50px;
+    left: -180px;
+    width: 150px;
+    transition: all 0.3s;
+    background-color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-bar .app-bar__navigation.open {
+    left: 0;
+}
+
+.app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    padding: 1.4rem 0;
+    padding-left: 1.6rem;
+}
+
+
+
+
+@media screen and (min-width: 650px) {
+    .app-bar {
+        grid-template-columns: 1fr auto;
+    }
+
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: 100%;
+        text-align: right;
+        height: auto;
+    }
+
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+
+    .app-bar .app-bar__navigation ul li a {
+        display: inline-block;
+        text-align: center;
+        padding: 2rem 1rem;
+        &:hover {
+            background-color: $color-primary;
+            color: white;
+            transition: all .3s;
+        }
+    }
+
+}
+ 
+
+
+
+
+
+.footer {
+    background-color: $color-grey;
+
+    &__wrapper {
+        padding: 6rem 1rem;
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+
+        @media only screen and (max-width:$bp-small) {
+            grid-template-columns: repeat(1, 1fr);
+            text-align: center;
+            row-gap: 4rem;
+        }
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    &__about {
+        font-size: 1.3rem;
+
+    }
+
+    &__logo {
+        width: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    &__social-media__list {
+        list-style: none;
+
+        &__link {
+            padding: 2rem 0;
+            padding-right: 2rem;
+        }
+
+        & li {
+            display: inline;
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+        }
+    }
+    &__social-media__link {
+        padding: 2rem 0;
+        padding-right: 2rem;
+        @media only screen and (max-width:$bp-small) {
+            padding: 1.5rem;
+        }
+
+    }
+}
+
+.nav-footer {
+    list-style: none;
+
+    &__item {
+        display: inline;
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        margin-right: 2rem;
+        padding: 2rem 0;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
