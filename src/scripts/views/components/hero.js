@@ -4,8 +4,11 @@ class Hero extends HTMLElement {
   }
 
   render() {
-    this.innerHTML = `<div class="hero-container">
-                      <img class="hero-image" src="images/heros/hero-image_2.jpg" alt="makanan dimeja" style="width:100%;">     
+    this.innerHTML = `<div class="hero-container">    
+                      <picture>
+                        <source media="(max-width: 600px)" srcset="images/heros/hero-image-small.jpg">
+                        <img class="hero-image" style="width:100%;" src="images/heros/hero-image-large.jpg" alt="makanan dimeja"></img>
+                      </picture>
                       <div class="centered">
                               <img class="hero-icon" src="images/icons/home-icon.svg" alt="icon kulinary" srcset="">
                           <h1>Temukan restoran yang akan menjadi <span class="hero-span">Favoritmu!</span></h1>

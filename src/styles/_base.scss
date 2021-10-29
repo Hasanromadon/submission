@@ -132,35 +132,13 @@ body {
     margin-bottom: 4rem;
 
     &__around {
-        background-image: url('../public/images/heros/bg-maps.png');
+        background-image: url('../public/images/utils/bg-maps.png');
         background-repeat: no-repeat;
         background-position: top;
         padding: 2rem 0;
     }
     &__search { 
         padding: 2rem 0;
-    }
-
-    &__subscribe {
-        display: flex;
-        justify-content: center;
-        &__wrapper {
-            background-image: url('../public/images/heros/bg-suscribe.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            text-align: center;
-            display: flex;
-            height: 10rem;
-            max-width: 90rem;
-            padding: 0 5rem;
-            align-items: center;
-            justify-content: center;
-
-            & p {
-                font-size: 2.4rem;
-                font-weight: 600;
-            }
-        }
     }
     &__favorite {
         margin-top: 4rem;
