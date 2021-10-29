@@ -3,7 +3,6 @@ import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 import './components/footer';
 import './components/category-food';
-import './components/visit-us';
 import './components/loading';
 
 class App {
