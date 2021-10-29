@@ -1,15 +1,3 @@
-.loader {
-    margin: 50rem auto;
-    text-align: center;
-}
-
-.load-icon {
-    width: 5rem;
-    height: 5rem;
-    animation: rotate 2s infinite linear;
-}
-
-
 input {
     padding: 2.2rem 2rem;
     border: none;
@@ -165,24 +153,9 @@ input {
     &__pin {
         width: .9rem;
         height: 1.3rem;
+        margin-right: .5rem;
     }
 
-}
-
-.form__search {
-    width: 100%;
-    text-align: center;
-}
-
-
-.btn-search {
-    @media only screen and (max-width:$bp-small) {
-        position: absolute !important;
-        clip: rect(1px, 1px, 1px, 1px);
-        height: 1px !important;
-        width: 1px !important;
-        overflow: hidden;
-    }
 }
 
 .icon-menu {

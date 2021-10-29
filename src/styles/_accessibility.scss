@@ -3,7 +3,7 @@
 .skip-link {
     background: $color-primary;
     color: black;
-    font-weight: 700;
+    font-weight: 600;
     left: 30%;
     padding: 1.6rem;
     position: absolute;
@@ -14,8 +14,6 @@
 .skip-link:focus {
     transform: translateY(0%);
 }
-
-
 
 .visually-hidden {
     position: absolute !important;

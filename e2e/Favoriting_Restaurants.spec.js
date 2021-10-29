@@ -26,7 +26,7 @@ Scenario('liking a restaurant', async ({ I }) => {
   I.amOnPage('/#/favorite');
   I.seeElement('.card');
   const likedCardTitle = await I.grabTextFrom('.card__link__title');
-  //compare clicked restaurant with restaurant on #favorite page
+  // compare clicked restaurant with restaurant on #favorite page
   assert.strictEqual(firstRestoCardTitle, likedCardTitle);
 });
 
