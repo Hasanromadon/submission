@@ -52,18 +52,22 @@ const detailRestaurant = ({
   return (
     `<div class="detail__card">
       <div class="detail__hero">
-          <img class="detail__hero__image" src="${API_ENDPOINT.IMAGE('medium')}/${pictureId}" alt="">
+      <picture>
+      <source media="(max-width: 600px)" srcset="${API_ENDPOINT.IMAGE('small')}/${pictureId}">
+      <img class="lazyload detail__hero__image" src="images/utils/placeholder.png" data-src="${API_ENDPOINT.IMAGE('medium')}/${pictureId}" alt="">
+    </picture>
+         
       </div>
       <div class="detail__card__header">
           <div class="detail__card__header__top">
 
               <h3 class="detail__card__header__title">${name}</h3>
-              <div class="detail__card__header__rating"> <img src="images/icons/icon-star.svg" alt=""><span> ${rating} (${ratingSay(rating)})</span></div>
+              <div class="detail__card__header__rating"> <img class="icon__star" src="images/icons/icon-star.svg" alt=""><span> ${rating} (${ratingSay(rating)})</span></div>
           </div>
       
           <div class="card__description__group ">
               <p class="visually-hidden">lokasi di</p>
-            <span class="card__description detail__location "> <img class="icon__star"
+            <span class="card__description detail__location "> <img class="icon__pin"
             src="images/icons/icon-pin.svg" alt="">${address}, ${city}</span>
           </div>
           <ul class="card__tags">

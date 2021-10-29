@@ -8,7 +8,7 @@ class Hero extends HTMLElement {
                       <picture>
                         <source type="image/jpeg" media="(max-width: 600px)" srcset="images/heros/hero-image-small.jpg">
                         <source type="image/webp" media="(max-width: 600px)" srcset="images/heros/hero-image-small.webp">
-                        <source type="image/webp" srcset="images/heros/hero-image-large.jpg">
+                        <source type="image/webp" srcset="images/heros/hero-image-large.webp">
                         <img class="hero-image" style="width:100%;" src="images/heros/hero-image-large.jpg" alt="makanan dimeja"></img>
                       </picture>
                       <div class="centered">
