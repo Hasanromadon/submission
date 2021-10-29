@@ -8,7 +8,7 @@ const restaurantCard = ({
   return (
     `<div class="card">
         <div class="card__img__wrapper">
-            <img class="card__img" loading=lazy src="${API_ENDPOINT.IMAGE('small')}/${pictureId}" alt="">
+            <img class="lazyload card__img" src="images/utils/placeholder.png" data-src="${API_ENDPOINT.IMAGE('small')}/${pictureId}" alt="">
         </div>
         <a href="${`/#/detail/${id}`}" class="card__link card__link--block">
             <span class="card__link__title">${name}</span>

@@ -3,6 +3,8 @@ import '../styles/main.scss';
 import App from './views/app';
 import './views/components/navigation';
 import './views/components/hero';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import registerServiceWorker from './utils/sw-register';
 
 const app = new App({
