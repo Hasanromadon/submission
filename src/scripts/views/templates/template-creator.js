@@ -15,7 +15,7 @@ const restaurantCard = ({
         </a>
         <div class="card__description__group">
           <p class="visually-hidden">lokasi di</p>
-         <span class="card__description"><img class="icon__star" src="images/icons/icon-pin.svg" alt="">${city}</span>
+         <span class="card__description"><img class="icon__pin" src="images/icons/icon-pin.svg" alt="">${city}</span>
          <span class="card__description card__description__rating ">
               <span class="icon__star">
                   ${startIcon}
@@ -128,7 +128,7 @@ const detailRestaurant = ({
               <input id="name" class="comment__input" name="name" type="text" placeholder="Namamu">
               <label class="visually-hidden" for="reviewText" >Review</label>
               <textarea id="reviewText" class="comment__input" name="review" id="" rows="10" cols="100" placeholder="Reviewmu, cth : Restoran Mantap sekali"></textarea>
-              <button type=submit" class="btn btn__primary btn--right">Kirim Review</button>
+              <button type=submit" id="btn-submit-review" class="btn btn__primary btn--right">Kirim Review</button>
             </form>
        
           </section>

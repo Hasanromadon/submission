@@ -17,60 +17,60 @@ export const ratingSay = (rating) => {
 export const ratingStars = (rating) => {
   let startIcon;
   if (rating > 4.5) {
-    startIcon = `<img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
+    startIcon = `<img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
                 `;
   } else if (rating === 4.5) {
-    startIcon = `<img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star-half.svg" alt="">`;
+    startIcon = `<img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-half.svg" alt="">`;
   } else if (rating >= 4) {
-    startIcon = `<img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">`;
+    startIcon = `<img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">`;
   } else if (rating >= 3.5) {
-    startIcon = `<img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star-half.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">`;
+    startIcon = `<img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-half.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">`;
   } else if (rating >= 3) {
-    startIcon = `<img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">`;
+    startIcon = `<img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">`;
   } else if (rating >= 2.5) {
-    startIcon = `<img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star-half.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">`;
+    startIcon = `<img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-half.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">`;
   } else if (rating >= 2) {
-    startIcon = `<img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">`;
+    startIcon = `<img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">`;
   } else if (rating >= 1.5) {
-    startIcon = `<img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star-half.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">`;
+    startIcon = `<img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-half.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">`;
   } else if (rating >= 1) {
-    startIcon = `<img src="images/icons/icon-star.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">
-                <img src="images/icons/icon-star-empty.svg" alt="">`;
+    startIcon = `<img class="icon__star" src="images/icons/icon-star.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">
+                <img class="icon__star" src="images/icons/icon-star-empty.svg" alt="">`;
   } else {
     startIcon = '';
   }

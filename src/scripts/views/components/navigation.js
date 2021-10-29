@@ -12,7 +12,7 @@ class Navbar extends HTMLElement {
     <header class="app-bar">
     <div class="container app-bar__container">
       <div class="app-bar__brand">
-      <a href="#/"> <img src="images/icons/logo.png" alt="logo" srcset=""></a>
+      <a href="#/"> <img class="app-bar__logo" src="images/icons/logo.png" alt="logo" srcset=""></a>
       </div>
       <nav id="navigationDrawer" class="app-bar__navigation">
           <ul>

@@ -3,7 +3,6 @@ class Footer extends HTMLElement {
     this.innerHTML = `<footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-  
                 <div class="footer__site">
                     <p class="footer__title">Sitemap</p>
                     <nav>

@@ -9,16 +9,6 @@
     animation: rotate 2s infinite linear;
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 
 input {
     padding: 2.2rem 2rem;
@@ -57,10 +47,6 @@ input {
     }
 }
 
-.active-link {
-    background-color: $color-primary;
-    color: white;
-}
 .card {
     position: relative;
 
@@ -171,8 +157,16 @@ input {
             
     }
 }
-.icon__star {
-    margin-right: .5rem;
+.icon {
+    &__star {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+    &__pin {
+        width: .9rem;
+        height: 1.3rem;
+    }
+
 }
 
 .form__search {

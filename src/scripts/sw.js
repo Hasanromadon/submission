@@ -18,8 +18,6 @@ import {
 
 clientsClaim();
 // eslint-disable-next-line no-restricted-globals
-self.skipWaiting();
-// eslint-disable-next-line no-restricted-globals
 precacheAndRoute(self.__WB_MANIFEST);
 registerRoute(
   ({
@@ -70,3 +68,9 @@ registerRoute(
     cacheName: 'static-resources',
   }),
 );
+
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});

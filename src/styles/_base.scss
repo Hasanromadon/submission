@@ -4,10 +4,21 @@ $color-grey : #EEE8E8;
 $color-grey-dark : #364353;
 $color-green : #5BA727;
 
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-medium-2: 49em; // 766px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+$bp-xsmall: 26em; // 408px
+
 // font-family: 'Rubik', sans-serif;
 
 h1 {
     font-size: 4.8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 3.2rem;
+     }
 }
 
 h2 {
@@ -39,13 +50,6 @@ a {
 p {
     line-height: 1.5;
 }
-
-$bp-large: 78.15em; // 1250px
-$bp-medium: 61.25em; // 980px
-$bp-medium-2: 49em; // 766px
-$bp-small: 37.5em; // 600px
-$bp-smallest: 31.25em; // 500px
-$bp-xsmall: 26em; // 408px
 
 
 
@@ -138,23 +142,23 @@ body {
     }
 
     &__subscribe {
-        background-repeat: no-repeat;
-        background-size: cover;
         display: flex;
         justify-content: center;
-        padding: 4rem 0;
-
         &__wrapper {
             background-image: url('../public/images/heros/bg-suscribe.png');
             background-repeat: no-repeat;
             background-size: cover;
-            padding: 5rem;
             text-align: center;
+            display: flex;
+            height: 10rem;
+            max-width: 90rem;
+            padding: 0 5rem;
+            align-items: center;
+            justify-content: center;
 
             & p {
                 font-size: 2.4rem;
                 font-weight: 600;
-                margin-bottom: 2rem;
             }
         }
     }
@@ -210,6 +214,7 @@ body {
 }
 .hero-image {
 height: 40rem;
+width: 100vh;
 object-fit:cover;
 }
 
@@ -233,6 +238,10 @@ object-fit:cover;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    & img {
+        width: 11.7rem;
+        height: 2.4rem;
+    }
   }
 
 .nodata {
